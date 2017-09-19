@@ -980,7 +980,7 @@
 }
 
 .teal {
-  background-color: #2b2b2b !important;
+  background-color: #26a69a !important;
 }
 
 .teal-text {
@@ -2763,6 +2763,14 @@ video.responsive-video {
   position: relative;
   overflow: hidden;
   height: 500px;
+}
+
+.parallax{
+  -webkit-filter: blur(2px)!important;
+-moz-filter: blur(2px)!important;
+-o-filter: blur(2px)!important;
+-ms-filter: blur(2px)!important;
+filter: blur(2px)!important;
 }
 
 .parallax-container .parallax {
@@ -9405,3 +9413,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/
 }
+
+
+/*.container {
+    max-width: 100% !important;
+    width: 95%;
+}*/
