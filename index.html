@@ -1,295 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Gaucho GS</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Gaucho GS</title>
 
 </head>
-
-<!-- Body de la pagina -->
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <!-- Insetar el logo de gaucho -->
-      <!-- <img src="imagenes/GauchoLogo.png" style="width: 140px"> -->
-      <a id="logo-container" href="#" class="brand-logo">GauchoGS</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-  <!-- Parallax -->
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <div class="center"><img src="imagenes/GauchoLogo.png" style="width: 40%;"></div>
-       <!-- <h1 class="header center teal-text text-lighten-2">Gaucho GS</h1> -->
-        <div class="row center">
-          <h5 class="header col s12 light">Movida descriptiva.</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <!-- <div class="parallax"><img src="imagenes/key10.jpg" alt="Unsplashed background img 1"></div> -->
-  </div>
-  <!-- ./parallax -->
-
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow" id="mainNav">
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">developer_mode</i></h2>
-            <h5 class="center">Desarrollos</h5>
-            <p class="light">
-            We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
-            </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">developer_board</i></h2>
-            <h5 class="center">Metodologia PMI</h5>
-
-            <p class="light"> Somos un grupo que considera que la metodologia PMI, es fundamental para la planificacion de los proyectos que tenemos.Por eso, nuestro personal se encuentra totalmente capacitado en esto, para que a la hora de tomar decisiones sobre un proyecto todos puedan ser parte y a su vez, aportar su vision con respecto a como se va a planificar dichos proyectos.
-            <!--By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.--></p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Alta Eficiencia</h5>
-
-            <p class="light"> Utilizamos metodologias agiles, y damos capacitaciones a nuestro personal con respecto a èsta. ya que consideramos que es una metodologia de trabajo en el ambito de desarrollo de software, fundamental para poder entregar un producto de alta calidad en los tiempos establecidos.
-            <!--We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.--></p>
-          </div>
-        </div>
-
-
-
-      </div>
-
-
+    <a class="navbar-brand js-scroll-trigger text-uppercase" href="./">GauchoGS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger text-uppercase" href="#about">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger text-uppercase" href="#services">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger text-uppercase" href="equipo.html">Equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger text-uppercase btn btn-info" href="#contact" style="color: white" onclick="spam()">Contacto</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <div class="container z-depth-3" style="background-color: #444; color: white;">
-    <div class="section" >
+<!-- Boton para activar barra de navegacion -->
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+	<i class="fa fa-bars"></i>
+</a>
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">developer_mode</i></h2>
-            <h5 class="center">Venta de Humo</h5>
-            <p class="light">
-            We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
-            </p>
+
+
+<!-- Barra de navegacion propiamente dicha -->
+<nav id="sidebar-wrapper">
+	<ul class="sidebar-nav">
+		<!-- Elemento para cerrar el menu -->
+   	<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+    	<i class="fa fa-times"></i>
+    </a>
+    <!-- Todas las opciones del menu -->
+   	<li class="sidebar-brand"><a class="js-scroll-trigger" href="#top">Gaucho GS</a></li>
+   	<li><a class="js-scroll-trigger" href="#top">Home</a></li>
+   	<li><a class="js-scroll-trigger" href="#about">About</a></li>
+   	<li><a class="js-scroll-trigger" href="#services">Services</a></li>
+   	<li><a class="js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+   	<li><a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a></li>
+  </ul>
+ </nav>
+
+
+
+<!-- HEADER de la pagina -->
+<header class="header" id="top">
+	<div class="text-vertical-center text-center">
+    <!-- Logo Gaucho -->
+    <img src="img/logo.png" width="400px">
+    <br><br><br>
+    <!-- <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Contactarnos</a> -->
+  </div>
+</header>
+
+
+
+
+<!-- Seccion Sobre Nosotros -->
+<section id="about" class="about">
+ 	<div class="container text-center">
+   	<h2 class="my-4 text-center">Quienes Somos</h2>
+    <hr class="primary">
+   	<p class="lead">
+     	Somos una empresa líder en soluciones informaticas.<br>
+     	Proponemos alternativa de calidad a la necesidades de nuestros clientes. 
+     	Gracias a nuestra pasion e innovación permanente, 
+     	usted podrá recibira asombrosas soluciones segun los requerimientos
+     	de su negocio.
+   	</p>
+ 	</div>
+ 	<!-- /.container -->
+</section>
+
+
+
+<!-- Servicios -->
+<section id="services" class="services bg-info text-white">
+ 	<div class="container text-center">
+   	<div class="row text-center">
+     	<div class="col-lg-10 mx-auto">
+       	<h2>Nuestros Servicios</h2>
+       	<hr class="small">
+       	<div class="row centered">
+         	
+
+         	<!-- Elem 1 Paginas Web -->
+         	<div class="col-md-3 col-sm-6">
+           	<div class="service-item">
+             	<span class="fa-stack fa-4x">
+               	<i class="fa fa-circle fa-stack-2x"></i>
+               	<i class="fa fa-globe fa-stack-1x text-primary"></i>
+             	</span>
+             	<h4><strong>Diseño Web</strong></h4>
+             	<p>Paginas web segun las necesidades de nuestros clientes.</p>
+           	</div>
+        	</div><!-- ./div col md3 -->
+
+
+        	<!-- Elem 2 Desarrollo-->
+          <div class="col-md-3 col-sm-6">
+             <div class="service-item">
+               <span class="fa-stack fa-4x">
+                 <i class="fa fa-circle fa-stack-2x"></i>
+                 <i class="fa fa-code fa-stack-1x text-primary"></i>
+               </span>
+               <h4><strong>Desarrollo</strong></h4>
+               <p>Aplicaciones moviles, web, escritorio, y de alcance medio.</p>
+             </div>
+          </div>
+
+
+          <!-- Elemento 3 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                <strong>Video Juegos</strong>
+              </h4>
+              <p>Nos enfocamos en software de entretenimiento multiplataformas.
+              </p>
+            </div>
+          </div>
+
+
+          <!-- elemento 4 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-file-text-o fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                <strong>Documentacion</strong>
+              </h4>
+              <p>
+              	Adecuada al software, permitiendo lograr
+              	una mejor calidad de producto.
+              </p>
+            </div>
+          </div>
+         
+
+
+       		<!-- /.row (nested) -->
+     		</div>
+     	<!-- /.col-lg-10 -->
+   		</div>
+   	<!-- /.row -->
+ 		</div>
+ 	</div>
+ <!-- /.container -->
+</section>
+
+
+<section class="services ">
+ 	<div class="container text-center">
+ 		<h2>Tegnologias</h2>
+       	<hr class="small"><br><br>
+       	<div class="row">
+       			<img src="img/tecnologias/tec1.png" height="60">
+       			<!-- <img src="img/tecnologias/tec2.png" height="60"> -->
+       			<!-- <img src="img/tecnologias/tec3.png" height="60"> -->
+ 				</div>
+ 	</div>
+</section>
+
+
+
+<footer class="text-center bg-light text-dark">
+      <div class="footer-above">
+        <div class="container">
+
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>Locacion</h3>
+              <p>Campana (2804), Buenos Aires</p>
+
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Contacto</h3>
+              <p>
+              		<i class="fa fa-phone"></i> (+54) 3487 475472 Lun a Vie 10 a 18hs.<br>
+              		<i class="fa fa-envelope"></i> sgauchogs@gmail.com
+              </p>
+              <a href="" class="btn btn-info btn-lg " onclick="spam()">Contacta con nosotros</a>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Nuestro Equipo</h3>
+              <p>Somos jovenes profesionales, dispuestos a brindar siempre el
+                <a href="equipo.html">mejor servicio</a>.</p>
+                 <!-- <a href="" class="btn btn-secondary">Contacta con nosotros</a> -->
+            </div>
           </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">developer_board</i></h2>
-            <h5 class="center">MAs Mugre</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Cosas Raras</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-
-
-        
       </div>
-
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Nacional con calidad Internacional.</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-       <i class="material-icons" style="font-size: 70px">assignment_ind</i>
-          
-          <h4>       
-          El Equipo de Trabajo</h4>
-          <p class="left-align light">
-            Cinco integrantes especializados en 
-            ingenieria en sistemas de informacion, con experiencia en desarrollos
-            Web y Otras Mugres.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
- <div class="container">
-    <div class="section center">
-
-   <div class="row">
-      <div class="col s12 m3 ">
-        <!-- <div class="card-panel teal center z-depth-3"> -->
-          <img src="imagenes/equipo/federico.jpg" width="150px" class="circle z-depth-3">
-          <span class="light-text">
-            <h5>Federico</h5>
-            <a href="#">Descripcion de Fede...</a>
-          </span>
-        <!-- </div> -->
-      </div>
-
-       <div class="col s12 m3">
-        <!-- <div class="card-panel teal z-depth-3"> -->
-          <img src="imagenes/equipo/lucas.jpg" width="150px" class="circle  z-depth-3">
-          <span class="light-text">
-            <h5>Lucas</h5>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
             
-          </span>
-        <!-- </div> -->
-      </div>
-
-
-       <div class="col s12 m3">
-        <!-- <div class="card-panel teal z-depth-3"> -->
-          <img src="imagenes/equipo/diego.jpg" width="150px" class="circle  z-depth-3">
-          <span class="light-text">
-            <h5>Diego</h5>
-            <a href="#">Descripcion de Diego...</a>
-          </span>
-        <!-- </div> -->
-      </div>
-
-
-       <div class="col s12 m3">
-        <!-- <div class="card-panel teal z-depth-3"> -->
-          <img src="imagenes/equipo/galeano.jpg" width="150px" class="circle  z-depth-3">
-          <span class="light-text">
-            <h5>Martin</h5>
-            <a href="#">Descripcion de Martin...</a>
-          </span>
-        <!-- </div> -->
-      </div>
-    </div>
-        <div class="row">
-      <div class="col s12 m3">
-        <!-- <div class="card-panel teal z-depth-3"> -->
-          <img src="imagenes/equipo/juan.jpg" width="150px" class="circle  z-depth-3">
-          <span class="light-text">
-            <h5>Juan</h5>
-            <a href="#">Descripcion de Juan...</a>
-          </span>
-        <!-- </div> -->
-      </div>
-
-
-    </div>
-          
           </div>
-          </div> 
-
-
-<!--   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+        </div>
+      </div>
+    </footer>
+<footer class="py-5 bg-dark">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
+        <p class="m-0 text-center text-white">Copyright © GauchoGS 2017</p>
       </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
- -->
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Sobre Nosotros</h5>
-          <p class="grey-text text-lighten-4"> Somos un grupo de estudiantes de Ingenieria en Sistemas de Informacion, que trabaja en este proyecto tiempo completo. 
-          Cualquier donacion sera bienvenida para poder continuar con este proyecto sera muy bienvenida y apreciada gratamente. 
-          <!--We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.--></p>
+      <!-- /.container -->
+    </footer>
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Encontranos en las Redes Sociales:</h5>
-          
-          <ul>
-            <li><a class="white-text" href="#!"><i class="small material-icons dp48">Facebook</i></a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      GauchoGS v1.0 - 2017 Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+<!-- IMPORTAR MOVIDA -->
+<!-- Bootstrap Core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="css/stylish-portfolio.css" rel="stylesheet">
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<!-- <script src="js/stylish-portfolio.js"></script> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/personalizado.css">
+</body>
 </html>
+
+<!-- Importar todas las librerias -->
+
+<script type="text/javascript">
+	function spam(){
+		alert('Alguien armese un form de contacto');
+	}
+</script>
+
