@@ -28,10 +28,10 @@ body{
     height: 100%;
     background-color: #ddd;
     background:none;
-    /*
+    
     background: url(../img/bg3.gif) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 }
