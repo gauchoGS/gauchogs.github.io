@@ -5,7 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Gaucho GS</title>
+<title>Gaucho GS - Contacto</title>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_T82HGJE1D2aq3RbYGtugo");
+   })();
+</script>
 
 </head>
 <body>
@@ -55,7 +62,7 @@
    	<li><a class="js-scroll-trigger" href="#about">About</a></li>
    	<li><a class="js-scroll-trigger" href="#services">Services</a></li>
    	<li><a class="js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-   	<li><a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a></li>
+   	<li><a class="js-scroll-trigger" href="contact.html";>Contact</a></li>
   </ul>
  </nav>
 
@@ -64,73 +71,46 @@
 <!-- Seccion Sobre Nosotros -->
 <section id="about" class="about">
  	<div class="container text-center">
-   	<h2 class="my-4 text-center">Quienes Somos</h2>
+   	<h2 class="my-4 text-center">CONTACTANOS</h2>
     <hr class="primary">
-   	<p class="lead">
-     	Somos una empresa líder en soluciones informaticas.<br>
-     	Proponemos alternativa de calidad a la necesidades de nuestros clientes. 
-     	Gracias a nuestra pasion e innovación permanente, 
-     	usted podrá recibira asombrosas soluciones segun los requerimientos
-     	de su negocio.
-   	</p>
- 	</div>
+    	<div class="row">
+   				<div class="col-md-7">
+   					<form>
+	   					<div class="text-left">
+	   						<p class="lead" id="nombre">Nombre: </p>
+	   						<input type="text-center" name="" placeholder="Anonymous, we are a legion...">
+	   					</div>
+
+	   					<div class="text-left">
+	   						<p class="lead" id="email">Email: </p>
+	   						<input type="text-center" name="" placeholder="Anonymous, we are a legion...">
+	   					</div>
+	   					
+	   					<div class="text-left">
+	   						<p class="lead" id="asunto">Asunto: </p>
+	   						<input type="text-center" name="" placeholder="Anonymous, we are a legion...">
+	   					</div>
+	   					
+	   					<div class="text-left">
+	   						<p class="lead" id="descripcion">Descripción: </p>
+	   						<!--<input type="text-center" id="desc" placeholder="Anonymous, we are a legion...">-->
+	   						<textarea class="form-control" id="exampleTextarea"  rows="4"></textarea>
+	   					</div>   					
+	   					<div class="text-left">
+	   						<button type="button" class="btn btn-primary btn-lg" onclick="enviarEmail()">Enviar</button>
+	   					</div>
+	   				</div>
+			</form>
+	   				<div class="col-md-5">
+	   					<img src="img/contacto/wachina.jpg" height="400px" width="550px">
+	   				</div>
+   		</div>
+   	</div>
  	<!-- /.container -->
 </section>
 
 
 
-<section>
-  <div class="container">
-   	<div class="row">
-   		
-   		<!-- Titulo -->
-     	<div class="col-lg-12">
-       	<h2 class="my-4 text-center">Nuestro Equipo</h2>
-       	<hr class="primary">
-     	</div>
-
-     	<!-- Miembro Diego  -->
-     	<div class="col-lg-4 col-sm-6 text-center mb-4">
-       	<img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/diego.jpg">
-       	<h3>Diego <small>Ingeniero</small></h3>
-       	<p class="text-muted">Desarrollador web y gestion de proyectos. Experto en materia de reducir costos.</p>
-     	</div>
-
-     	<!-- Miembro numero 2 -->
-	    <div class="col-lg-4 col-sm-6 text-center mb-4" style="">
-	    	<img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/lucas.jpg">
-	      <h3>Lucas <small>Ingeniero</small></h3>
-	      <p class="text-muted">Desarrollador de videojuegos. Espiritu mercenario enojado con su empresa porque le quisieron cobrar un taxi.</p>
-	    </div>
-
-	    <!-- Miembro x -->
-     	<div class="col-lg-4 col-sm-6 text-center mb-4">
-       	<img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/federico.jpg">
-       	<h3>Federico <small>Ingeniero</small></h3>
-       	<p class="text-muted">Enfermo por la estetica, la documentacion y la venta de humo. Burgues que viaja mucho. No pedirle nunca que haga un presupuesto.</p>
-     	</div>
-
-     	<!-- Miembro x -->
-     	<div class="col-lg-4 col-sm-6 text-center mb-4">
-       	<img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/galeano.jpg">
-       	<h3>Martin <small>Ingeniero</small></h3>
-       	<p class="text-muted">Desarrollador explotado, kirchnerista, y fanatico de dalmine. Aun asi lo queremos.</p>
-     	</div>
-
-     	<!-- Miembro x -->
-     	<div class="col-lg-4 col-sm-6 text-center mb-4">
-       	<img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/juan.jpg">
-       	<h3>Juan <small>Ingeniero</small></h3>
-       	<p class="text-muted">Enfermo por la joda, no quiere trabajar, solo vivir en camboriu.</p>
-     	</div>  
-
-
-   	</div>
-   <!-- ./row -->
- 	<!-- ./container -->
- 	</div>
-</section>
- 
 
 
 
@@ -204,14 +184,15 @@
 <!-- Custom scripts for this template -->
 <script src="js/stylish-portfolio.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="css/personalizado.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
 </body>
 </html>
 
 <!-- Importar todas las librerias -->
 
 <script type="text/javascript">
-  function spam(){
-    alert('Alguien armese un form de contacto');
-  }
+	function enviarEmail()
+	{
+		emailjs.send("gmail", "gauchogs_validacion", {"email":"diegomartin010@gmail.com"})
+	}
 </script>
