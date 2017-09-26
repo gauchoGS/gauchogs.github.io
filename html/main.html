@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Gaucho GS</title>
+</head>
+
+<body>
+
+<!-- Barra de Navegacion -->
+<div w3-include-html="componentes/navbar.html"></div>
+
+<!-- Sistema de particulas -->
+<!-- Como soy alto villero hardcodeo estilos en el div. -->
+<div id="particles-js" class=" text-vertical-center text-center " style=" vertical-align: middle;background-color: black; width: 110%">
+  <div style="position:absolute; left: 35%; top:40%;" >
+      <img src="../img/logo.png" width="400px" >
+      <h5 class="text-white text-right">
+       <br>
+       Tel: 3487 475472
+       <br>
+       Email: gaucho@basicamente.com
+      </h5>
+  </div>
+</div>
+
+<!-- Incluir los scripts a lo REEEEEEE NEGRO -->
+<script src="../js/particles.js"></script>
+
+<!-- Aca me recibi de boliviano tercermundista, que hdp ..... -->
+<!-- Le chanto la configuracion del sistema de particulas en el body -->
+<!-- Bebito pinto el encierro. -->
+<script type="text/javascript">
+  // var color = "#00D5FF";
+  var color = "#ff5050";
+  particlesJS('particles-js',
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": color
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": color
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": color,
+        "opacity": 1,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+);
+</script>
+
+
+<!-- Seccion Sobre quienes_somos -->
+<section id="about" class="about">
+  <div class="container text-center">
+    <h2 class="my-4 text-center">Quienes Somos</h2>
+    <hr class="primary">
+    <p class="lead">
+      Somos una empresa líder en soluciones informaticas.<br>
+      Proponemos alternativa de calidad a la necesidades de nuestros clientes. 
+      Gracias a nuestra pasion e innovación permanente, 
+      usted podrá recibira asombrosas soluciones segun los requerimientos
+      de su negocio.
+    </p>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="services" class="services bg-info text-white about">
+  <div class="container text-center">
+    <div class="row text-center">
+      <div class="col-lg-10 mx-auto">
+        <h2>Nuestros Servicios</h2>
+        <hr class="small">
+        <div class="row centered">
+                <!-- Elem 1 html Web -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-globe fa-stack-1x text-primary"></i>
+                    </span>
+                    <h4><strong>Diseño Web</strong></h4>
+                    <p>html web segun las necesidades de nuestros clientes.</p>
+                  </div>
+                </div>
+                <!-- Elem 2 Desarrollo-->
+                <div class="col-md-3 col-sm-6">
+                   <div class="service-item">
+                     <span class="fa-stack fa-4x">
+                       <i class="fa fa-circle fa-stack-2x"></i>
+                       <i class="fa fa-code fa-stack-1x text-primary"></i>
+                     </span>
+                     <h4><strong>Desarrollo</strong></h4>
+                     <p>Aplicaciones moviles, web, escritorio, y de alcance medio.</p>
+                   </div>
+                </div>
+                <!-- Elemento 3 -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
+                    </span>
+                    <h4>
+                      <strong>Video Juegos</strong>
+                    </h4>
+                    <p>Nos enfocamos en software de entretenimiento multiplataformas.
+                    </p>
+                  </div>
+                </div>
+                <!-- elemento 4 -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-file-text-o fa-stack-1x text-primary"></i>
+                    </span>
+                    <h4>
+                      <strong>Documentacion</strong>
+                    </h4>
+                    <p>
+                      Adecuada al software, permitiendo lograr
+                      una mejor calidad de producto.
+                    </p>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Barra de navegacion header -->
+<div w3-include-html="componentes/footer_informacion.html"></div>
+<!-- Barra de navegacion header -->
+<div w3-include-html="componentes/footer.html"></div>
+
+
+</body>
+</html>
+<!-- IMPORTAR MOVIDA -->
+<!-- Bootstrap Core CSS -->
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="../css/stylish-portfolio.css" rel="stylesheet">
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/popper/popper.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<!-- <script src="js/stylish-portfolio.js"></script> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/personalizado.css">
+
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script type="text/javascript">w3.includeHTML();</script>
+<!-- Importar todas las librerias -->
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Gaucho GS</title>
+</head>
+<body>
+
+<!-- Barra de Navegacion -->
+<div w3-include-html="componentes/navbar.html"></div>
+
+<br><br>
+
+<section>
+ <!-- Titulo -->
+  <div class="container text-center">
+    <h2 class="my-4 text-center">Contacto</h2>
+    <hr class="primary">
+  </div>
+  <!-- </div> -->
+  <!-- <div class="row"> -->
+  <div class="container center-block col-md-4 text-center" style="float: none; background-color: #f8f9fa">
+    <form class="form-horizontal text-left text-muted" method="post">
+      <label>Nombre</label>
+      <input id="name" type="text" placeholder="Your name" class="form-control">
+      <label>Email</label>
+      <input id="email" type="text" placeholder="Your email" class="form-control">
+      <label>Telefono</label>
+      <input id="email" type="text" placeholder="Your email" class="form-control">
+      <label>Your message</label>
+      <textarea class="form-control" id="message" placeholder="Please enter your message here..." rows="5"></textarea>
+    </form>
+    <br>
+    <button type="submit" class="btn btn-info text-center btn-lg">Enviar Consulta</button>
+    <br><br>
+  </div>
+  <br><br>
+
+</section>
+
+<!-- Barra de navegacion header -->
+<div w3-include-html="componentes/footer_informacion.html"></div>
+<!-- Barra de navegacion header -->
+<div w3-include-html="componentes/footer.html"></div>
+
+
+</body>
+</html>
+<!-- Bootstrap Core CSS -->
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="../css/stylish-portfolio.css" rel="stylesheet">
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/popper/popper.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<!-- <script src="js/stylish-portfolio.js"></script> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/personalizado.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script type="text/javascript">w3.includeHTML();</script>
+
+<!-- La movida del email que hizo el colo. -->
+<!-- creo que experimentando en esto, te rompi la movida. Perdon -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init("user_T82HGJE1D2aq3RbYGtugo");
+  function enviarEmail()
+  {
+    emailjs.send("gmail", "gauchogs_validacion", {"email":"diegomartin010@gmail.com"})
+  }
+</script>
+
