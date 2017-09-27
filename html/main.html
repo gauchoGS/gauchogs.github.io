@@ -8,20 +8,55 @@
 
 <body>
 
+<style type="text/css">
+  
+
+
+  .movida {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /* 
+  Yep!
+  */
+  transform: translate(-50%, -50%);
+
+  /*
+  Not even necessary really. 
+  e.g. Height could be left out!
+  */
+  width: 50%;
+  height: 50%;
+}
+
+@media all and (max-width: 640px) {
+  #particles-js {
+    display: none;
+  }
+}
+</style>
+
 <!-- Barra de Navegacion -->
 <div w3-include-html="componentes/navbar.html"></div>
 
 <!-- Sistema de particulas -->
 <!-- Como soy alto villero hardcodeo estilos en el div. -->
 <div id="particles-js" class=" text-vertical-center text-center " style=" vertical-align: middle;background-color: black; width: 110%">
-  <div style="position:absolute; left: 35%; top:40%;" >
-      <img src="../img/logo.png" width="400px" >
-      <h5 class="text-white text-right">
+  <div class="movida" >
+      <img src="../img/logo.png" width="50%" >
+      <h6 class="text-white text-center">
        <br>
-       Tel: 3487 475472
+       <i class="fa fa-phone"></i> <em> 3487 475472</em>
        <br>
-       Email: GauchoUEN@gmail.com
-      </h5>
+       <i class="fa fa-envelope-o"></i> <a href="mailto:gauchouen@gmail.com">gauchouen@gmail.com</a>
+      </h6>
   </div>
 </div>
 
