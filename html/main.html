@@ -7,7 +7,7 @@
 <title>Gaucho GS</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
 
 <style type="text/css">
   
@@ -193,7 +193,7 @@
 
 
 <!-- Seccion Sobre quienes_somos -->
-<section id="about" class="about">
+<section id="about" class="about" style="height: 100%;display: flex;align-items: center;">
   <div class="container text-center">
     <h2 class="my-4 text-center">Quienes Somos</h2>
     <hr class="primary">
@@ -208,7 +208,7 @@
 </section>
 
 <!-- Servicios -->
-<section id="services" class="services bg-info text-white about">
+<section id="services" class="services bg-info text-white about" style="height: 100%;display: flex;align-items: center;">
   <div class="container text-center">
     <div class="row text-center">
       <div class="col-lg-10 mx-auto">
@@ -273,6 +273,92 @@
   </div>
 </section>
 
+<!-- Descripcion del equipo -->
+<section class="about bg-warning" id="team" style="display: flex;align-items: center;">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Titulo -->
+      <div class="col-lg-12">
+        <h2 class="my-4 text-center">Nuestro Equipo</h2>
+        <hr class="primary">
+      </div>
+
+      <!-- Miembro Diego  -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="../img/equipo/diego.jpg">
+        <h3><strong>Diego Colussi</strong></h3>
+        <p class="text-muted">Desarrollador web y Proyect Manager.</p>
+        <p><em>"--La documentación hace a la calidad de nuestros productos."</em></p>
+      </div>
+
+      <!-- Miembro numero 2 -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4" style="">
+        <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="../img/equipo/lucas.jpg">
+        <h3><strong>Lucas Galetti</strong></h3>
+        <p class="text-muted">Desarrollador de videojuegos y Game Design.</p>
+        <p><em>"-- Los videojuegos son un buen metodo de entrada al aprendizaje"</em></p>
+      </div>
+
+      <!-- Miembro x -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="../img/equipo/federico.jpg">
+        <h3><strong>Federico Sanches</strong></h3>
+        <p class="text-muted">Web design & Proyect Manager.</p>
+        <p><em>"-- La estética es fundamental para nuestros productos."</em></p>
+      </div>
+
+      <!-- Miembro x -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="../img/equipo/galeano.jpg">
+        <h3><strong>Martin Galeano</strong></h3>
+        <p class="text-muted">SME en Desarrollo Web & Cloud Computing.</p>
+        <p><em>"--Usamos la mejor infraestructura acorde a la necesidad de nuestros clientes"</em></p>
+      </div>
+
+      <!-- Miembro x -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="../img/equipo/juan.jpg">
+        <h3><strong>Juan Gallardo</strong></h3>
+        <p class="text-muted">Desarrollador Web y Bussiness Manager.</p>
+        <p><em>"--La calidad en nuestros productos es nuestra primera prioridad"</em></p>
+      </div>  
+
+
+    </div>
+   <!-- ./row -->
+  <!-- ./container -->
+  </div>
+</section>
+
+<section class="services bg-success text-white about" id="contact" style="display: flex;align-items: center;">
+ <!-- Titulo -->
+  <div class="container text-center" style="width: 60%">
+    <h2 class="my-4 text-center">Contacto</h2>
+    <hr class="primary">
+
+    <form id="form1" class="form-horizontal text-left text-muted" method="post">
+      <label style="color: white;">Nombre:</label>
+      <input id="nombre" type="text" name="nombre" placeholder="Osvaldo 'Beto' Mendeleiev" class="form-control" required>
+      <label style="color: white;">Email:</label>
+      <input id="email" type="email" name="email" placeholder="ejemplo@ejemplo2.com" class="form-control" required>
+      <label style="color: white;">Telefono:</label>
+      <input id="telefono" type="number" name="telefono" placeholder="03489581082" class="form-control" required number min="1">
+      <label style="color: white;">Ingrese su Mensaje:</label>
+      <textarea class="form-control" id="message" name="message" placeholder="Su inquietud es muy importante..." rows="5" required></textarea>
+      <br>
+      <button type="submit" class="btn btn btn-dark text-center btn-lg" style="display: block;margin: 0 auto;">Enviar Consulta</button>
+    </form>
+  </div>
+  <!-- </div> -->
+  <!-- <div class="row"> -->
+  
+    <br><br>
+  </div>
+  <br><br>
+
+</section>
+
 <!-- Barra de navegacion header -->
 <div w3-include-html="componentes/footer_informacion.html"></div>
 <!-- Barra de navegacion header -->
@@ -305,8 +391,46 @@
 <script type="text/javascript">w3.includeHTML();</script>
 <!-- Importar todas las librerias -->
 
+<script type="text/javascript">
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+</script>
 
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_T82HGJE1D2aq3RbYGtugo");
+   })();
+</script>
+
+<script type="text/javascript">
+var form = $("#form1");
+form.submit(function(event){
+  event.preventDefault();
+  
+
+  var service_id = "gmail";
+  var template_id = "gauchogs_consulta";
+
+  form.find("button").text("Enviando...");
+  emailjs.sendForm(service_id,template_id,"form1")
+    .then(function(){ 
+      alert("Su consulta fue enviada");
+       form.find("button").text("Enviar Consulta");
+       $("html, body").animate({scrollTop: $("#particles-js").offset().top}, 500);
+    }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       form.find("button").text("Enviar Consulta");
+    });
+  return false;
+});
+</script>
 
 
 
