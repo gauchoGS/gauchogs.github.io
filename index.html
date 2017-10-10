@@ -20,8 +20,11 @@
   #particles-js {
     display: none;
   }
+  .movida{
+    display: inline;
+  }
 }
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   #services {
     height: 100%;
   }
@@ -59,6 +62,7 @@
 
 <!-- Sistema de particulas -->
 <!-- Como soy alto villero hardcodeo estilos en el div. -->
+<section id="main" class="bg-black" style="height: 100%">
 <div id="particles-js" class=" text-vertical-center text-center " style=" vertical-align: middle;background-color: black; width: 110%">
   <div class="movida" >
       <img src="img/logo.png" width="50%" >
@@ -70,6 +74,7 @@
       </h6>
   </div>
 </div>
+</section>
 
 <!-- Incluir los scripts a lo REEEEEEE NEGRO -->
 <script src="js/particles.js"></script>
@@ -78,7 +83,8 @@
 <!-- Bebito pinto el encierro. -->
 <script type="text/javascript">
   // var color = "#00D5FF";
-  var color = "#00ffad";
+  //var color = "#00ffad";
+  var color = '#'+Math.floor(Math.random()*16777216).toString(16);
   particlesJS('particles-js',
   {
     "particles": {
@@ -149,11 +155,11 @@
       }
     },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "bubble"
         },
         "onclick": {
           "enable": true,
@@ -169,14 +175,14 @@
           }
         },
         "bubble": {
-          "distance": 400,
-          "size": 40,
+          "distance": 200,
+          "size": 10,
           "duration": 2,
           "opacity": 8,
           "speed": 3
         },
         "repulse": {
-          "distance": 200
+          "distance": 100
         },
         "push": {
           "particles_nb": 4
@@ -220,7 +226,7 @@
     <div class="row text-center">
       <div class="col-lg-10 mx-auto">
         <h2>Nuestros Servicios</h2>
-        <hr class="small">
+        <hr class="primary">
         <div class="row centered">
                 <!-- Elem 1 html Web -->
                 <div class="col-md-3 col-sm-6">
@@ -295,7 +301,7 @@
       <div class="col-lg-4 col-sm-6 text-center mb-4">
         <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/diego.jpg">
         <h3><strong>Diego Colussi</strong></h3>
-        <p class="text-muted">Desarrollador web y Proyect Manager.</p>
+        <p class="text-danger">Desarrollador web y Proyect Manager.</p>
         <p><em>"--La documentación hace a la calidad de nuestros productos."</em></p>
       </div>
 
@@ -303,7 +309,7 @@
       <div class="col-lg-4 col-sm-6 text-center mb-4" style="">
         <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/lucas.jpg">
         <h3><strong>Lucas Galetti</strong></h3>
-        <p class="text-muted">Desarrollador de videojuegos y Game Design.</p>
+        <p class="text-danger">Desarrollador de videojuegos y Game Design.</p>
         <p><em>"-- Los videojuegos son un buen metodo de entrada al aprendizaje"</em></p>
       </div>
 
@@ -311,7 +317,7 @@
       <div class="col-lg-4 col-sm-6 text-center mb-4">
         <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/federico.jpg">
         <h3><strong>Federico Sanches</strong></h3>
-        <p class="text-muted">Web design & Proyect Manager.</p>
+        <p class="text-danger">Web design & Proyect Manager.</p>
         <p><em>"-- La estética es fundamental para nuestros productos."</em></p>
       </div>
 
@@ -319,15 +325,15 @@
       <div class="col-lg-4 col-sm-6 text-center mb-4">
         <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/galeano.jpg">
         <h3><strong>Martin Galeano</strong></h3>
-        <p class="text-muted">SME en Desarrollo Web & Cloud Computing.</p>
+        <p class="text-danger">SME en Desarrollo Web & Cloud Computing.</p>
         <p><em>"--Usamos la mejor infraestructura acorde a la necesidad de nuestros clientes"</em></p>
       </div>
 
       <!-- Miembro x -->
       <div class="col-lg-4 col-sm-6 text-center mb-4">
         <img class="rounded-circle img-fluid d-block mx-auto shadow" width="150px" src="img/equipo/juan.jpg">
-        <h3><strong>Juan Gallardo</strong></h3>
-        <p class="text-muted">Desarrollador Web y Bussiness Manager.</p>
+        <h3><strong>Juan Manuel Gallardo</strong></h3>
+        <p class="text-danger">Desarrollador Web y Bussiness Manager.</p>
         <p><em>"--La calidad en nuestros productos es nuestra primera prioridad"</em></p>
       </div>  
 
@@ -374,16 +380,15 @@
 
       <div class="row">
         <div class="footer-col col-md-4">
-          <h3>Locacion</h3>
+          <h3>Ubicación</h3>
           <p>Campana (2804), Buenos Aires</p>
         </div>
         <div class="footer-col col-md-4">
           <h3>Contacto</h3>
           <p>
               <i class="fa fa-phone"></i> (+54) 3487 475472 Lun a Vie 10 a 18hs.<br>
-              <i class="fa fa-envelope"></i> sgauchogs@gmail.com
+              <i class="fa fa-envelope"></i> gauchouen@gmail.com
           </p>
-          <a href="contacto.html" class="btn btn-secondary btn-lg">Contacto</a>
         </div>
         <div class="footer-col col-md-4">
           <h3>Nuestro Equipo</h3>
@@ -466,6 +471,3 @@ form.submit(function(event){
   return false;
 });
 </script>
-
-
-
